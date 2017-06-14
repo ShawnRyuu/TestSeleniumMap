@@ -1,26 +1,33 @@
 package com.baidumap;
 import java.util.concurrent.TimeUnit;
+
 //import org.junit.Assert.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.FindBy;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 //import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.AfterClass;
 
 public class MapTest01 {
 	private WebDriver driver;
-  @Test
-  public void verifySearchButton() {
+  
+    @FindBy(css = "#div#u1 a:nth-of-type(3)")
+    private WebElement mapLink;
+
+    @Test
+    public void verifySearchButton() {
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	  driver.get("http://www.baidu.com/");
 	  //String search_text = "Google Search";
 	  //WebElement search_button = driver.findElement(By.name("btnK"));
 	  
-	  WebElement mapLink = driver.findElement(By.cssSelector("div#u1 a:nth-of-type(3)")); 
-	  mapLink.click();
+        // Please refer to the WebElement above using @FindBy.
+        // WebElement mapLink = driver.findElement(By.cssSelector("div#u1 a:nth-of-type(3)"));
+        mapLink.click();
 	  
 	  WebElement routeLink = driver.findElement(By.cssSelector("div.searchbox-content-button.right-button.route-button.loading-button")); 
 	  routeLink.click();
@@ -31,10 +38,8 @@ public class MapTest01 {
 	  WebElement selectCity = driver.findElement(By.cssSelector("div#selCityHotCityId a:nth-of-type(2)")); 
 	  selectCity.click();
 	  
-	  String startFrom = "天安门";
-	  
-	  
-	  String destinationTo = "国贸";
+        String startFrom = "天安门";
+        String destinationTo = "国贸";
 	  
 	  WebElement startInput = driver.findElement(By.cssSelector("input.route-start-input.input-iploc"));
 	  startInput.clear(); 
