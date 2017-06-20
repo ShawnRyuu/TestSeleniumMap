@@ -1,89 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="59728" started-at="2017-06-14T04:54:07Z" finished-at="2017-06-14T04:55:07Z">
+  <suite name="Suite" duration-ms="34632" started-at="2017-06-20T05:31:47Z" finished-at="2017-06-20T05:32:21Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="59728" started-at="2017-06-14T04:54:07Z" finished-at="2017-06-14T04:55:07Z">
+    <test name="Test" duration-ms="34632" started-at="2017-06-20T05:31:47Z" finished-at="2017-06-20T05:32:21Z">
       <class name="com.baidumap.MapTest01">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.baidumap.MapTest01@5b275dab]" name="beforeClass" is-config="true" duration-ms="7158" started-at="2017-06-14T12:54:07Z" finished-at="2017-06-14T12:54:14Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.baidumap.MapTest01@6f7fd0e6]" name="beforeClass" is-config="true" duration-ms="4696" started-at="2017-06-20T13:31:47Z" finished-at="2017-06-20T13:31:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="FAIL" signature="verifySearchButton()[pri:0, instance:com.baidumap.MapTest01@5b275dab]" name="verifySearchButton" duration-ms="52539" started-at="2017-06-14T12:54:14Z" finished-at="2017-06-14T12:55:07Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"css selector","selector":"div.selInfoWndBtn"}
-Command duration or timeout: 10.23 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'AP2438U', ip: '10.30.1.31', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: b1123e4b-d385-4db7-a56e-f0502b5c4d4d
-*** Element info: {Using=css selector, value=div.selInfoWndBtn}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"div.selInfoWndBtn"}
-Command duration or timeout: 10.23 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'AP2438U', ip: '10.30.1.31', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: b1123e4b-d385-4db7-a56e-f0502b5c4d4d
-*** Element info: {Using=css selector, value=div.selInfoWndBtn}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.baidumap.MapTest01.verifySearchButton(MapTest01.java:54)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"div.selInfoWndBtn"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'AP2438U', ip: '10.30.1.31', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Skys/AppData/Local/Temp/anonymous4302607278930378583webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Skys/AppData/Local/Temp/anonymous4302607278930378583webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="verifySearchButton()[pri:0, instance:com.baidumap.MapTest01@6f7fd0e6]" name="verifySearchButton" duration-ms="29112" started-at="2017-06-20T13:31:51Z" finished-at="2017-06-20T13:32:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchButton -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.baidumap.MapTest01@5b275dab]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-06-14T12:55:07Z" finished-at="2017-06-14T12:55:07Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.baidumap.MapTest01@6f7fd0e6]" name="afterClass" is-config="true" duration-ms="812" started-at="2017-06-20T13:32:21Z" finished-at="2017-06-20T13:32:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
